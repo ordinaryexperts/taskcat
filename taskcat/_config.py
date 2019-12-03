@@ -331,5 +331,6 @@ class Config:
                 template=templates[test_name],
                 project_root=project_root,
                 regions=region_list,
+                role_arn=test.role_arn,
             )
         return tests

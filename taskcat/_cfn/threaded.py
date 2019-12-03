@@ -34,12 +34,14 @@ class Stacker:
         project_name: str,
         tests: Dict[str, TestObj],
         uid: uuid.UUID = NULL_UUID,
+        role_arn: str = None,
         stack_name_prefix: str = "tCaT",
         tags: list = None,
     ):
         self.tests = tests
         self.project_name = project_name
         self.stack_name_prefix = stack_name_prefix
+        self.role_arn = role_arn
         self.tags = tags if tags else []
         self.uid = uuid.uuid4() if uid == Stacker.NULL_UUID else uid
         self.stacks: Stacks = Stacks()
@@ -71,6 +73,7 @@ class Stacker:
             "stack_name": stack_name,
             "template": test.template,
             "tags": tags,
+            "role_arn": self.role_arn
             "test_name": test.name,
         }
         stacks = fan_out(Stack.create, partial_kwargs, test.regions, threads)

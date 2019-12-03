@@ -305,6 +305,7 @@ class TestObj:
     project_root: Path
     name: TestName
     regions: List[TestRegion]
+    role_arn: TestRoleArn
 
 
 @dataclass
