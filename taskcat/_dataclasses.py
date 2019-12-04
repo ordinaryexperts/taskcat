@@ -61,7 +61,7 @@ METADATA = {
     "role_arn": {
         "description": "role_arn"
     },
-    "tags": {"description": "Tags to apply to Cloudformation template"},
+    "tags": {"description": "Tags to apply to CloudFormation template"},
     "enable_sig_v2": {
         "description": "Enable (deprecated) sigv2 access to auto-generated buckets"
     },
