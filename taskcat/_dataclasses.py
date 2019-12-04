@@ -58,7 +58,10 @@ METADATA = {
         "description": "path to template file relative to the project "
         "config file path"
     },
-    "tags": {"description": "Tags to apply to CloudFormation template"},
+    "role_arn": {
+        "description": "role_arn"
+    },
+    "tags": {"description": "Tags to apply to Cloudformation template"},
     "enable_sig_v2": {
         "description": "Enable (deprecated) sigv2 access to auto-generated buckets"
     },

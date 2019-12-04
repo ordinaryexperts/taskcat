@@ -240,6 +240,10 @@
                     "description": "Tags to apply to CloudFormation template",
                     "type": "object"
                 },
+                "role_arn": {
+                    "description": "ARN of role to pass to CloudFormation when creating the stacks",
+                    "type": "string"
+                },
                 "template": {
                     "description": "path to template file relative to the project config file path",
                     "type": "string"
