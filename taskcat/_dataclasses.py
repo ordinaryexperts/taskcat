@@ -81,6 +81,7 @@ AlNumDash = NewType("AlNumDash", str)
 ProjectName = NewType("ProjectName", AlNumDash)
 S3BucketName = NewType("S3BucketName", AlNumDash)
 TestName = NewType("TestName", AlNumDash)
+TestRoleArn = NewType("TestRoleArn", str)
 AzId = NewType("AzId", str)
 Templates = NewType("Templates", Dict[TestName, Template])
 
